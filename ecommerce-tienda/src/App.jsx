@@ -1,10 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Navbar from "./componentes/Navbar/Navbar";
 import Titulo from "./componentes/Titulo/Titulo";
 import Footer from "./componentes/Footer/Footer";
+import NavBar from "./componentes/Navbar/NavBar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -12,14 +10,9 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-      <Titulo />
+      <NavBar />
+      <Titulo titulo=' soy un titulo' subtitulo='Soy el subtitulo' />
       <Footer />
-      
-      
-      
-
-      
     </div>
   );
 }

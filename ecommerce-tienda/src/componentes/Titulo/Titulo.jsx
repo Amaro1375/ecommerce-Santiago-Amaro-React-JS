@@ -1,11 +1,12 @@
-function Titulo() {
+function Titulo(props) {
+  console.log(props)
     return (
       <div>
         <h1>
-          Bajos Camalotes
+          {props.titulo}
         </h1>
         <h2>
-          Tienda de indumentaria de Pesca
+          {props.subtitulo}
         </h2>
       </div>
     )
